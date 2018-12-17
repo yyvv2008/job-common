@@ -1,0 +1,13 @@
+{
+  "name": "yyvv2008/job-common",
+  "type": "project",
+  "description": "job common handle",
+  "require": {
+    "pda/pheanstalk": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Job\\": "job-common/"
+    }
+  }
+}
