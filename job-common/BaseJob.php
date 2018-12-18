@@ -11,7 +11,7 @@ namespace Job;
 use IJob\IJob;
 use Pheanstalk\Pheanstalk;
 
-abstract class baseJob implements IJob
+abstract class BaseJob implements IJob
 {
     public function exec($obj)
     {
