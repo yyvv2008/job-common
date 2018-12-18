@@ -12,9 +12,9 @@ use Pheanstalk\Pheanstalk;
 
 class Common
 {
-    public function put($obj)
+    public function put($obj, $host, $port = 11300)
     {
-        $pheanstalk = Pheanstalk::create('127.0.0.1');
+        $pheanstalk = Pheanstalk::create($host, $port);
         return $pheanstalk->useTube('demo')->put($obj);
     }
 }
