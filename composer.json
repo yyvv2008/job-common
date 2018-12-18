@@ -9,5 +9,11 @@
     "psr-4": {
       "Job\\": "job-common/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:yyvv2008/job-common.git"
+    }
+  ]
 }
