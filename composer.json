@@ -7,7 +7,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Job\\": "job-common/"
+      "Job\\": "job-common/",
+      "IJob\\": "Interface/"
     }
   },
   "repositories": [

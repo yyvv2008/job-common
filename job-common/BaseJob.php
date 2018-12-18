@@ -8,10 +8,16 @@
 
 namespace Job;
 
+use IJob\IJob;
 use Pheanstalk\Pheanstalk;
 
-class Common
+abstract class baseJob implements IJob
 {
+    public function exec($obj)
+    {
+
+    }
+
     public function put($obj, $host, $port = 11300)
     {
         $pheanstalk = Pheanstalk::create($host, $port);
